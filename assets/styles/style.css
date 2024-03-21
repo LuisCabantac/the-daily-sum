@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    width: 10ch;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0.5em;
+    border: 1px solid #414141;
+    border-radius: 22px;
+    font-size: 4rem;
+}
+
+::selection {
+    background-color: white;
+    color: black;
+}
+
+#num-display {
+    padding-left: 4.1em;
+    font-size: 5rem;
+}
+
+button {
+    width: 6ch;
+    height: 6ch;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: inherit;
+    border: none;
+    background-color: #343434;
+    transition: linear 0.1s all;
+    cursor: pointer;
+}
+
+#zero {
+    width: 13.3ch;
+}
+
+button:hover {
+    border-radius: 25px;
+    background-color: #414141;
+}
+
+button:active {
+    border-radius: 25px;
+    background-color: #2e2e2e;
+}
+
+.top-btns {
+    color: black;
+    background-color: #A5A5A5;
+}
+
+.top-btns:hover {
+    background-color: #b6b6b6;
+}
+
+.top-btns:active {
+    background-color: #979797;
+}
+
+.operation-btns {
+    background-color: #CC3201;
+}
+
+.operation-btns:hover {
+    background-color: #df3d0c;
+}
+
+.operation-btns:active {
+    background-color: #be2c00;
+}
