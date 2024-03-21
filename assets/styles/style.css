@@ -41,7 +41,7 @@ button {
     color: inherit;
     border: none;
     background-color: #343434;
-    transition: linear 0.1s all;
+    transition: linear 0.2s all;
     cursor: pointer;
 }
 
