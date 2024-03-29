@@ -1,111 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 body {
-    box-sizing: border-box;
-    font-family: "Inter", sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: black;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
 }
 
 .container {
-    width: 10ch;
-    background-color: black;
-    color: white;
-    margin: 0;
-    padding: 0.5em;
-    border: 1px solid #414141;
-    border-radius: 22px;
-    font-size: 4rem;
+  width: 10ch;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0.5em;
+  border: 1px solid #414141;
+  border-radius: 22px;
+  font-size: 4rem;
 }
 
 ::selection {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #be2c00;
 }
 
 #num-display {
-    padding-left: 4.1em;
-    font-size: 5rem;
+  text-align: right;
+  /* padding-left: 4.1em; */
+  padding-right: 0.4em;
+  font-size: 5rem;
+  overflow-y: hidden;
 }
 
 button {
-    width: 6ch;
-    height: 6ch;
-    border-radius: 50px;
-    font-family: inherit;
-    font-size: 1.4rem;
-    color: inherit;
-    border: none;
-    background-color: #343434;
-    transition: linear 0.2s all;
-    cursor: pointer;
+  width: 6ch;
+  height: 6ch;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1.4rem;
+  color: inherit;
+  border: none;
+  background-color: #343434;
+  transition: linear 0.2s all;
+  cursor: pointer;
 }
 
 #zero {
-    width: 13.3ch;
-    text-align: left;
-    padding-left: 1.6em;
+  width: 13.3ch;
+  text-align: left;
+  padding-left: 1.6em;
 }
 
 button:hover {
-    border-radius: 25px;
-    background-color: #414141;
+  border-radius: 25px;
+  background-color: #414141;
 }
 
 button:active {
-    background-color: #2e2e2e;
+  background-color: #2e2e2e;
 }
 
-.top-btns {
-    color: black;
-    background-color: #A5A5A5;
+.top-btns,
+#percent-btn {
+  color: black;
+  background-color: #a5a5a5;
 }
 
-.top-btns:hover {
-    background-color: #b6b6b6;
+.top-btns:hover,
+#percent-btn:hover {
+  background-color: #b6b6b6;
 }
 
-.top-btns:active {
-    background-color: #979797;
+.top-btns:active,
+#percent-btn:active {
+  background-color: #979797;
 }
 
-.operation-btns {
-    background-color: #CC3201;
+.operation-btns,
+#equal-btn {
+  background-color: #cc3201;
 }
 
-.operation-btns:hover {
-    background-color: #df3d0c;
+.operation-btns:hover,
+#equal-btn:hover {
+  background-color: #df3d0c;
 }
 
-.operation-btns:active {
-    background-color: #be2c00;
+.operation-btns:active,
+#equal-btn:active {
+  background-color: #be2c00;
 }
 
 @media screen and (max-width: 600px) {
-    .container {
-        width: 21ch;
-        font-size: 1.5rem;
-        padding: 0.9em;
-        padding-right: 0.1em;
-    }
-
-    #num-display {
-        padding-left: 2.9em;
-    }
-    
-    button {
-        width: 4.2ch;
-        height: 4.2ch;
-        font-size: 1.5rem;
-        margin: 0.1em;
-    }
-    
-    #zero {
-        width: 9.2ch;
-        padding-left: 1.1em;
-    }
+  .container {
+    width: 21ch;
+    font-size: 1.5rem;
+    padding: 0.9em;
+    padding-right: 0.1em;
   }
+
+  /* #num-display {
+        padding-left: 2.9em;
+    } */
+
+  button {
+    width: 4.2ch;
+    height: 4.2ch;
+    font-size: 1.5rem;
+    margin: 0.1em;
+  }
+
+  #zero {
+    width: 9.2ch;
+    padding-left: 1.1em;
+  }
+}
