@@ -18,7 +18,6 @@ document.querySelectorAll(".btns").forEach((el) =>
     } else {
       numTwo = Number(displayNumber.textContent);
     }
-    // operate(numOne, operand, numTwo);
   })
 );
 
@@ -28,6 +27,12 @@ document.querySelectorAll(".btns-operators").forEach((el) =>
     document.querySelector("#num-display").textContent = "0";
   })
 );
+
+document.querySelector("#btns-sign").addEventListener("click", function () {
+  let displayNumber = document.querySelector("#num-display");
+  let number = parseFloat(displayNumber.textContent);
+  displayNumber.textContent = -number;
+});
 
 document.querySelector("#equal-btn").addEventListener("click", () => {
   if (numOne !== null && operand === "%" && numTwo === null) {
